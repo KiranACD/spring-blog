@@ -6,9 +6,15 @@ import javax.persistence.ManyToOne;
 
 import com.example.springblog.commons.BaseEntity;
 import com.example.springblog.users.UserEntity;
+
+import lombok.Getter;
+import lombok.Setter;
+
 import com.example.springblog.articles.ArticleEntity;
 
 @Entity(name="comments")
+@Getter
+@Setter
 public class CommentEntity extends BaseEntity {
     
     @Column(nullable=false, length=100)
